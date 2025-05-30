@@ -1,0 +1,43 @@
+cat .config/shell/profile
+loadkeys
+sudo -n loadkeys $XDG_DATA_HOME/scripts/ttymaps.kmap
+sudo loadkeys $XDG_DATA_HOME/scripts/ttymaps.kmap
+sudo visudo
+sudo -n loadkeys $XDG_DATA_HOME/scripts/ttymaps.kmap
+exit
+ls -a
+cd temp
+ls
+git clone https://git.suckless.org/dwm
+git clone https://git.suckless.org/dmenu
+git clone https://github.com/LukeSmithxyz/st
+ls
+mkdir suckless
+mv {st,dmenu,dwm} suckless
+ls
+suckless
+ls
+dwm
+sudo make clean install
+..
+dmenu
+sudo make clean install
+..
+st
+sudo make clean install
+cd
+startx
+update
+give pixman
+dwm
+picom
+startx
+less /var/log/Xorg.0.log
+exec dwm
+vim /etc/ly/config.ini
+sudo vim /etc/ly/config.ini
+sudo nvim /etc/ly/config.ini
+exit
+startx
+exit
+lf
