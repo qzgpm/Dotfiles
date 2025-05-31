@@ -9,6 +9,7 @@ setxkbmap -option caps:swapescape
 
 #Autostart
 picom &
+dwmblocks &
 dunst &
 unclutter &
 udiskie &
