@@ -6,7 +6,7 @@ d   ${XDG_DOCUMENTS_DIR:-$HOME/Documents}
 dt  ${XDG_DATA_HOME:-$HOME/.local/share}
 rr  $HOME/.local/src
 h   $HOME
-m   ${XDG_MEDIA_DIR:-$HOME/Media}
+hm  ${XDG_MEDIA_DIR:-$HOME/Media}
 mn  /mnt
 mu  ${XDG_MUSIC_DIR:-$HOME/Music}
 pp  ${XDG_PICTURES_DIR:-$HOME/Pictures}
