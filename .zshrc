@@ -24,6 +24,9 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 
+# Add case-insensitive tab completion (new line)
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' #'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
 #vi mode
 bindkey -v
 export KEYTIMEOUT=1

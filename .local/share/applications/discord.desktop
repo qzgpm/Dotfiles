@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Discord (No GPU)
+Exec=/usr/bin/discord --disable-gpu %U
