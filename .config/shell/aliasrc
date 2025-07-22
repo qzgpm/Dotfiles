@@ -48,19 +48,15 @@ alias \
   ln="ln -i" \
   rm="rm -vI" \
   bc="bc -ql" \
+  ka="killall" \
   du="dust -d 2 --reverse" \
   python="python -q" \
-  give="paru -S" \
-  update="paru -Syyu" \
-  remove="paru -Rns" \
-  search="paru -Ss" \
   less="bat --paging=always" \
-  wifi="nmcli -p device wifi" \
   mirrorsync="sudo reflector --country India,US,DE,FR,SG,GB --latest 30 --protocol https --ipv6 --sort rate --save /etc/pacman.d/mirrorlist"
 
 # Colorize commands when possible.
 alias \
-  ls="eza -lh --icons --group-directories-first --color=always" \
+  ls="eza -h --icons --group-directories-first --color=always" \
   grep="grep -i --color=auto" \
   diff="diff --color=auto" \
   ip="ip -color=auto" \
