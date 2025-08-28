@@ -313,11 +313,13 @@ static const Key keys[] = {
 	/* Function Keys */
 	{ MODKEY,			                  XK_F1,	       spawn,		               {.v = wifiscan}},
 	{ MODKEY,			                  XK_F2,	       spawn,		               SHCMD("udiskie-umount -a")},
+  { MODKEY,                       XK_F3,         spawn,                  SHCMD("setxkbmap -option caps:swapescape")},
 	{ MODKEY,			                  XK_F5,         xrdb,                   {.v = NULL } },
 	{ MODKEY,			                  XK_F11,        spawn,                  SHCMD("mpv --untimed --vf=hflip --no-cache --no-osc --no-input-default-bindings --profile=low-latency --input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | tail -n 1)") },
 
   /* Power Off */
 	{ MODKEY|ShiftMask,		          XK_q,          spawn,                  {.v = (const char*[]){ "sysact", NULL } } },
+  { MODKEY,                       XK_BackSpace,  spawn,                  {.v = (const char*[]){ "sysact", NULL } } },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,          quit,                   {1} },
 
 	{ MODKEY,                       XK_t,          setlayout,              {.v = &layouts[0]} },
